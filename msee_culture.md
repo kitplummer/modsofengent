@@ -4,16 +4,15 @@
 
 Change is hard.  But, it must be managed, proactively, in order for any enterprise to be able to manage against it.  Deep dependencies and concrete processes can cripple an organization as requirements and inputs change upstream.  
 
-Diversity is complex.  However diversity is the attribute that can help an organization’s culture towards not only being change tolerant, but change-driven.  It is extremely critical that the culture stay diverse, open and willing to share knowledge and experience, and not inflexible to operating boundaries.  While diversity is good, this does not imply that functions within the organization can avoid specialization and a learning path required to master any given domain.  Also while diversity does imply breadth the distribution of an organizations skills can not be applied serially or in sequence - which create intermediate walls and barriers for progress.  While matrix organizational (NOTE:  Matrix organizational structure as defined by the Education Portal: http://education-portal.com/academy/lesson/matrix-organizational-structure-advantages-disadvantages-examples.html#lesson
-) design can help, it isn’t necessarily the only answer.  The most important ideal is that the right collection of skills are applied at the appropriate times - and not just for the sake of diversity.
+Diversity is complex.  However diversity is the attribute that can help an organization’s culture towards not only being change tolerant, but change-driven.  It is extremely critical that the culture stay diverse, open and willing to share knowledge and experience, and not inflexible to operating boundaries.  While diversity is good, this does not imply that functions within the organization can avoid specialization and a learning path required to master any given domain.  Also while diversity does imply breadth the distribution of an organizations skills can not be applied serially or in sequence - which create intermediate walls and barriers for progress.  While a matrix organizational[^culture1] design can help, it isn’t necessarily the only answer.  The most important ideal is that the right collection of skills are applied at the appropriate times - and not just for the sake of diversity.
 
 ## Software is Never Complete (Sort of)
 
-While Fred Brooks, of The Mythical Man-Month fame, opined that software should only change up to a point otherwise it will never be finished (NOTE:  http://en.wikipedia.org/wiki/The_Mythical_Man-Month#Code_freeze_and_system_versioning) and that code freezes are a must, it is difficult to apply this thought across the board to modern software.  This is even more true given the shift to components and frameworks where dependency are more externalized.  That said, it isn’t difficult to imagine libraries whose functionality is solidified to the point where there is no more change possible.  Also, it is possible for applications to be retired, or intentionally have a short/specified lifetime.  In fact, the notion that applications should be shelved when their cost to operate exceeds their usefulness, or cost to re-implement with modern tools and methods should be acceptable.  The ability to manage against these types of change requires an inherent acceptance of change, from the top leadership layers to development and operations teams.
+While Fred Brooks, of The Mythical Man-Month fame, opined that software should only change up to a point otherwise it will never be finished[^culture2] and that code freezes are a must, it is difficult to apply this thought across the board to modern software.  This is even more true given the shift to components and frameworks where dependency are more externalized.  That said, it isn’t difficult to imagine libraries whose functionality is solidified to the point where there is no more change possible.  Also, it is possible for applications to be retired, or intentionally have a short/specified lifetime.  In fact, the notion that applications should be shelved when their cost to operate exceeds their usefulness, or cost to re-implement with modern tools and methods should be acceptable.  The ability to manage against these types of change requires an inherent acceptance of change, from the top leadership layers to development and operations teams.
 
 [...]
 
-## Definition of Terms: 
+## Definition of Terms:
 
 ## Open
 
@@ -25,7 +24,7 @@ Adding the social aspect to the life of code is also useful in an enterprise.  A
 
 Open communications seems like an obvious attribute within any enterprise.  But, it isn’t just about open doors, and open spaces.  While open communication is extremely important for any environment where change is prevalent, software teams need a channel for communication that persists the dialog, and makes sharing ideas, and asking questions barrier-free.  The benefit is that is both passive and active, especially if team members are geographically separated.  A dialog can take place in real-time, and then other team members can contribute when they are available.  In order to avoid too much noise, different channels can be used for different topics/subjects (ala old-fasioned IRC).  It is also possible for systems to be able to report into these channels providing knowledge about the automation infrastructure (e.g. the state of the last build on a commit/change) which then can be discussed, or managed appropriately.  It is also possible to integrate project management tools, enabling the teams to get notifications of workflow state changes, or task assignments.  The transparent nature of this model is an improvement over email in that the team(s) can have a easy awareness about the overall operation of things within their purview.
 
-In addition to group communication, and somewhat dependent on the size of the enterprise a social feed is extremely useful in creating relationships, based on a context of interest, across teams and possibly across organizations.  This is especially useful in enterprises that bridge many geographic areas and cultures.  Having a "Twitter"-like feed can help openly permeate ideas, new technologies and provide a platform for emergent innovation (NOTE:  http://www.cloudave.com/493/six-factors-in-emergent-innovation/ ).  
+In addition to group communication, and somewhat dependent on the size of the enterprise a social feed is extremely useful in creating relationships, based on a context of interest, across teams and possibly across organizations.  This is especially useful in enterprises that bridge many geographic areas and cultures.  Having a "Twitter"-like feed can help openly permeate ideas, new technologies and provide a platform for emergent innovation[^culture3].
 
 Once teams and individuals operate in a more open environment, based on transparency of the project’s code base and persisted communications channels - the level of knowledge sharing grows.
 
@@ -33,13 +32,13 @@ Once teams and individuals operate in a more open environment, based on transpar
 
 It is much easier to talk about knowledge sharing than it is to have a culture that subscribes to it.  This is caused by everything from personalities to job security.  However, an enterprise that establishes the right process and tools, will grow the culture in the direction that it wishes.  It really starts with a social-centric source code repository toolset - all Github.com.  While Github is one example, there a handful of options available for intra-enterprise use.  By removing the barrier to entry for contributions - even if outside the project’s own development team - the enterprise establishes a "search-first" environment.  By opening this door the enterprise can also prevent tribal knowledge where certain projects hoard - intentionally or otherwise.
 
-Brown-bags, book studies, hosting meet-ups, and tech-sharing conferences all can serve to help distribute knowledge through the organization.  Getting junior staff involved in the general knowledge sharing culture, by presenting on their learning process removes inhibition and helps create an accepting environment.  
+Brown-bags, book studies, hosting meet-ups, and tech-sharing conferences all can serve to help distribute knowledge through the organization.  Getting junior staff involved in the general knowledge sharing culture, by presenting on their learning process removes inhibition and helps create an accepting environment.
 
-The idea of knowledge sharing isn’t without issue.  In most cases it is the tools at the root of these issues (NOTE:  http://www.jarche.com/2013/03/the-knowledge-sharing-paradox/) rather than the concept itself.  The challenge becomes one where pockets of knowledge can be created, and technologies and practices are complex enough where it doesn’t make sense to share.  Enterprises have a tendency to want to create "areas of expertise" or “communities of practice” which attempt to create opportunities for knowledge sharing, but end up just constraining the reach of the knowledge.  Micro and macro sharing?
+The idea of knowledge sharing isn’t without issue.  In most cases it is the tools at the root of these issues[^culture4] rather than the concept itself.  The challenge becomes one where pockets of knowledge can be created, and technologies and practices are complex enough where it doesn’t make sense to share.  Enterprises have a tendency to want to create "areas of expertise" or “communities of practice” which attempt to create opportunities for knowledge sharing, but end up just constraining the reach of the knowledge.  Micro and macro sharing?
 
 At some point it makes sense to share with intent being enterprise awareness - the macro, while also sharing for expertise - the micro.  But, the point here is that enterprises should focus on creating networks of individuals who can create collective knowledge in breadth, across project boundaries.  ??? Missing something here.  How to close this out?
 
-One challenge for enterprises is creating an environment that isn’t about squeezing out individual knowledge, or appearing to be an intellectual property suck.  One way to manage this is to enable engineers to be more open, sharing publically via blog posts and big-community contributions.  Therefore the individual’s effort is as much about self-marketing (internally and externally) as it is about sharing. 
+One challenge for enterprises is creating an environment that isn’t about squeezing out individual knowledge, or appearing to be an intellectual property suck.  One way to manage this is to enable engineers to be more open, sharing publically via blog posts and big-community contributions.  Therefore the individual’s effort is as much about self-marketing (internally and externally) as it is about sharing.
 
 ## Polyglot yet Mastery
 
@@ -76,8 +75,13 @@ All that said, it IS really important for different roles to collaborate to arri
 
 Integrated continuum
 
- 
+
 
 Engineering compared to IT
 
-Culture must be paired with processes and methods that enable, yet control change.  Without an infrastructure of flexibility, technical debt will amass.  The process for change must be understood, and not encumbered by personal or organizational intelligence. 
+Culture must be paired with processes and methods that enable, yet control change.  Without an infrastructure of flexibility, technical debt will amass.  The process for change must be understood, and not encumbered by personal or organizational intelligence.
+
+[^culture1]:[http://education-portal.com/academy/lesson/matrix-organizational-structure-advantages-disadvantages-examples.html#lesson](http://education-portal.com/academy/lesson/matrix-organizational-structure-advantages-disadvantages-examples.html#lesson)
+[^culture2]:[http://en.wikipedia.org/wiki/The_Mythical_Man-Month#Code_freeze_and_system_versioning](http://en.wikipedia.org/wiki/The_Mythical_Man-Month#Code_freeze_and_system_versioning)
+[^culture3]:[http://www.cloudave.com/493/six-factors-in-emergent-innovation/](http://www.cloudave.com/493/six-factors-in-emergent-innovation/)
+[^culture4]:[http://www.jarche.com/2013/03/the-knowledge-sharing-paradox/](http://www.jarche.com/2013/03/the-knowledge-sharing-paradox/)
