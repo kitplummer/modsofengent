@@ -1,0 +1,3 @@
+% The Modern Software Engineering Enterprise
+% Kit Plummer
+% kit@airgap.io

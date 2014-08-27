@@ -1,3 +1,3 @@
-# The Modern Software Engineering Enterprise
+\newpage
 
 !["MAM Caracas"](image_0.jpg)
