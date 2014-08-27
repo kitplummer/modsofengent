@@ -1,0 +1,83 @@
+\newpage
+
+# Culture of Change, People!
+
+Change is hard.  But, it must be managed, proactively, in order for any enterprise to be able to manage against it.  Deep dependencies and concrete processes can cripple an organization as requirements and inputs change upstream.  
+
+Diversity is complex.  However diversity is the attribute that can help an organization’s culture towards not only being change tolerant, but change-driven.  It is extremely critical that the culture stay diverse, open and willing to share knowledge and experience, and not inflexible to operating boundaries.  While diversity is good, this does not imply that functions within the organization can avoid specialization and a learning path required to master any given domain.  Also while diversity does imply breadth the distribution of an organizations skills can not be applied serially or in sequence - which create intermediate walls and barriers for progress.  While matrix organizational (NOTE:  Matrix organizational structure as defined by the Education Portal: http://education-portal.com/academy/lesson/matrix-organizational-structure-advantages-disadvantages-examples.html#lesson
+) design can help, it isn’t necessarily the only answer.  The most important ideal is that the right collection of skills are applied at the appropriate times - and not just for the sake of diversity.
+
+## Software is Never Complete (Sort of)
+
+While Fred Brooks, of The Mythical Man-Month fame, opined that software should only change up to a point otherwise it will never be finished (NOTE:  http://en.wikipedia.org/wiki/The_Mythical_Man-Month#Code_freeze_and_system_versioning) and that code freezes are a must, it is difficult to apply this thought across the board to modern software.  This is even more true given the shift to components and frameworks where dependency are more externalized.  That said, it isn’t difficult to imagine libraries whose functionality is solidified to the point where there is no more change possible.  Also, it is possible for applications to be retired, or intentionally have a short/specified lifetime.  In fact, the notion that applications should be shelved when their cost to operate exceeds their usefulness, or cost to re-implement with modern tools and methods should be acceptable.  The ability to manage against these types of change requires an inherent acceptance of change, from the top leadership layers to development and operations teams.
+
+[...]
+
+## Definition of Terms: 
+
+## Open
+
+In order for quality to run through as a core value of all software and engineering projects in an enterprise they should be open.  Having projects in a "shared" version control system allows for “social coding” Where security requirements allow, it is best - also for knowledge-sharing - that project’s source code be discoverable, and reviewable by all in the enterprise.  In cases where it isn’t permissible for security reasons - as much of the code base should be managed in an up-stream dependency pattern (just like external dependencies) in order to optimize the potential for collaboration across projects.  It is a growing trend that enterprises also open source pieces of their projects, in order to garner a greater community effort into the development.  There is an overhead to this, so the impact on the enterprise and projects should be reviewed - beyond just intellectual property concerns.  This is a topic that goes beyond the scope of this paper, but it is relevant to both the culture and processes of a modern environment.
+
+Adding the social aspect to the life of code is also useful in an enterprise.  Aside from the obvious reuse and collaboration potential, the projects could be used for HR and personnel reviews, and training and knowledge sharing purposes.  Skillsets can be gleaned from contributions, identifying opportunities for future projects or even mentorship.
+
+[https://www.cs.cmu.edu/~xia/resources/Documents/cscw2012_Github-paper-FinalVersion-1.pdf](https://www.cs.cmu.edu/~xia/resources/Documents/cscw2012_Github-paper-FinalVersion-1.pdf)
+
+Open communications seems like an obvious attribute within any enterprise.  But, it isn’t just about open doors, and open spaces.  While open communication is extremely important for any environment where change is prevalent, software teams need a channel for communication that persists the dialog, and makes sharing ideas, and asking questions barrier-free.  The benefit is that is both passive and active, especially if team members are geographically separated.  A dialog can take place in real-time, and then other team members can contribute when they are available.  In order to avoid too much noise, different channels can be used for different topics/subjects (ala old-fasioned IRC).  It is also possible for systems to be able to report into these channels providing knowledge about the automation infrastructure (e.g. the state of the last build on a commit/change) which then can be discussed, or managed appropriately.  It is also possible to integrate project management tools, enabling the teams to get notifications of workflow state changes, or task assignments.  The transparent nature of this model is an improvement over email in that the team(s) can have a easy awareness about the overall operation of things within their purview.
+
+In addition to group communication, and somewhat dependent on the size of the enterprise a social feed is extremely useful in creating relationships, based on a context of interest, across teams and possibly across organizations.  This is especially useful in enterprises that bridge many geographic areas and cultures.  Having a "Twitter"-like feed can help openly permeate ideas, new technologies and provide a platform for emergent innovation (NOTE:  http://www.cloudave.com/493/six-factors-in-emergent-innovation/ ).  
+
+Once teams and individuals operate in a more open environment, based on transparency of the project’s code base and persisted communications channels - the level of knowledge sharing grows.
+
+## Knowledge Sharing
+
+It is much easier to talk about knowledge sharing than it is to have a culture that subscribes to it.  This is caused by everything from personalities to job security.  However, an enterprise that establishes the right process and tools, will grow the culture in the direction that it wishes.  It really starts with a social-centric source code repository toolset - all Github.com.  While Github is one example, there a handful of options available for intra-enterprise use.  By removing the barrier to entry for contributions - even if outside the project’s own development team - the enterprise establishes a "search-first" environment.  By opening this door the enterprise can also prevent tribal knowledge where certain projects hoard - intentionally or otherwise.
+
+Brown-bags, book studies, hosting meet-ups, and tech-sharing conferences all can serve to help distribute knowledge through the organization.  Getting junior staff involved in the general knowledge sharing culture, by presenting on their learning process removes inhibition and helps create an accepting environment.  
+
+The idea of knowledge sharing isn’t without issue.  In most cases it is the tools at the root of these issues (NOTE:  http://www.jarche.com/2013/03/the-knowledge-sharing-paradox/) rather than the concept itself.  The challenge becomes one where pockets of knowledge can be created, and technologies and practices are complex enough where it doesn’t make sense to share.  Enterprises have a tendency to want to create "areas of expertise" or “communities of practice” which attempt to create opportunities for knowledge sharing, but end up just constraining the reach of the knowledge.  Micro and macro sharing?
+
+At some point it makes sense to share with intent being enterprise awareness - the macro, while also sharing for expertise - the micro.  But, the point here is that enterprises should focus on creating networks of individuals who can create collective knowledge in breadth, across project boundaries.  ??? Missing something here.  How to close this out?
+
+One challenge for enterprises is creating an environment that isn’t about squeezing out individual knowledge, or appearing to be an intellectual property suck.  One way to manage this is to enable engineers to be more open, sharing publically via blog posts and big-community contributions.  Therefore the individual’s effort is as much about self-marketing (internally and externally) as it is about sharing. 
+
+## Polyglot yet Mastery
+
+[http://techcrunch.com/2014/07/10/our-polyglot-nightmare/](http://techcrunch.com/2014/07/10/our-polyglot-nightmare/)
+
+[http://jondavidjohn.com/where-polyglot-programming-goes-awry/](http://jondavidjohn.com/where-polyglot-programming-goes-awry/)
+
+[http://alexruiz.developerblogs.com/?p=493](http://alexruiz.developerblogs.com/?p=493)
+
+No more "shops", about the developer, right tool for the job.
+
+JVM + frameworks
+
+Rails != language
+
+Specialists are required.  Each layer is too complex and too dynamic for individuals or organizations to distribute across functional layers.  Expertise is still required to optimize any layer.
+
+Full-stack developers, it’s a really small pool, and somewhat of a farce.  As mentioned above, the complexity of each layer in the stack - at some point, and most likely towards production - will extend beyond the expertise a full-stacker would have in it.
+
+Let’s just consider the layers in a stack of anything beyond a super simple web application.  Starting at the bottom - you have at least one data store, and likely more than one type (e.g. relational for records, document-oriented for metrics, and possible key-value for configuration)
+
+Front-end, back-end, sys-admin, cloudmin
+
+All must share common understanding of operational requirements - and must be able to communicate across the matrix
+
+## DevOps
+All enterprises are software enterprises now.  It’s the nature of the world we live in.  This isn’t to be confused with traditional information technology (IT) functions either.
+
+One of the most overused buzzwords I hear is "collaboration".  It is directly applicable for musicians who sit down and orchestrate multiple like and unlike instruments into a single output.  The same workflow generally doesn’t apply to any other working environment - and especially not for software development.  Sure developers can collaborate on various aspects - like architecture or infrastructure.  However, unless you’re truly working in a pair programming environment, collaboration is somewhat far-fetched in the implementation details.
+
+All that said, it IS really important for different roles to collaborate to arrive at a common understanding, or system architecture.  Developers must understand operational requirements.  Operators and system administrators must understand security and policy requirements.  And that common understanding requires input from everyone in the engineering to operations continuum (and the consumer or user).
+
+!Dev->QA/Sec->Ops
+
+Integrated continuum
+
+ 
+
+Engineering compared to IT
+
+Culture must be paired with processes and methods that enable, yet control change.  Without an infrastructure of flexibility, technical debt will amass.  The process for change must be understood, and not encumbered by personal or organizational intelligence. 
