@@ -4,7 +4,7 @@
 
 Underlying any modern software system is a collection of efforts towards defining that system for set of requirements. Modern systems must be architected in the same way as traditional systems, from a process perspective.  However, the landscape had changed - and we are wiser.  Complexity[^process_architecture1] is biggest risk to a system.  The greatest aspect of Agile is the desire to deliver only what is of value, constantly re-evaluting what is the greatest priority.  From an architectural perspective the system under development must allow for that to happen.  This isn't without challenge.  Technology decisions must be made early, sending the project in a direction.  By managing from a complexity perspective teams can often avoid bad directions early.
 
-Support for usability, extensibility, maintainability, deliverability, testability, and the list goes on and on.  But, there a few that stand out in the modern environment - most are obvious[^process_architecture2].  Scalability is probably the least understood, even in the modern software engineering world.  But, scalability is the one that translates to quality customer services at the most efficient/economic effort.
+Support for usability, extensibility, maintainability, deliverability, testability, and the list goes on and on.  But, there a few that stand out in the modern environment - most are obvious[^process_architecture2].  Scalability is probably the least understood, even in the modern software engineering world.  But, scalability is the one that translates to quality customer services at the most efficient/economic effort.  As the focus of the modern engineering enterprise is delivery - deliverability is a key parameter and must be applicable to any software pipelined through the organization.  One that seems to be missing is monitorability.  Software systems must be designed and developed with the appropriate instrumentation hooks, that allow for monitoring.
 
 The biggest enabler for the modern enterprise is a shift towards modern architecture and tools.  While the cloud has created various opportunities for deferring data center costs, it really hasn’t affected software architecture as much as one would think.  While new technologies like map-reduce (Hadoop) and NoSQL databases (Mongo, Cassandra, Couch, etc.) are designed for distribution across an enterprise (public, private or hybrid) they don’t necessarily apply to the standard of enterprise applications and services.  In addition, the evolution of Platform as a Service (PaaS) has yet to really be scaled to a point where it is readily available for on-premise operations.  There is definitely effort to make this happen, and to support the continuous delivery methods espoused in this paper.
 
@@ -38,9 +38,9 @@ Here’s a few links on the discussion:
 
 ### 12-Factor
 
-A group of developers and operators combined their wisdom in a single document as a collection of 12 aspects a modern software applications should cover.
+One of the challenges with a shift in architectures, or even simple proofs of concepts, is the need to understand why the patterns are patterns, and how conventions are installed.  With a return to a services-centric mindset many architects and developers are looking for ways to 'checklist' their applications against the modern standards.  Operators are wondering if the evolution of the data center and cloud services is being recognized as requirements in new developments.
 
-[http://12factor.net](http://12factor.net)
+A group of developers and operators combined their wisdom in a single document as a collection of 12 aspects a modern software applications should cover[^process_architecture3].
 
 The 12 factors are:
 
@@ -68,7 +68,7 @@ The 12 factors are:
 
 12. Admin processes - run admin/management tasks as one-off processes
 
-It is definitely worth going through the deep dive for each section as the overarching focus in deliverability, scalability and maintainability.
+It is definitely worth going through the deep dive for each section on the 12-Factors site as the overarching focus covers deliverability, scalability and monitorability.
 
 ### Mobile
 
@@ -80,3 +80,4 @@ Each of the app stores has a different processes...automate the delivery to thei
 
 [^process_architecture1]:[http://alarmingdevelopment.org/?p=893](http://alarmingdevelopment.org/?p=893)
 [^process_architecture2]:[http://codesqueeze.com/the-7-software-ilities-you-need-to-know/](http://codesqueeze.com/the-7-software-ilities-you-need-to-know/)
+[^process_architecture3]:[http://12factor.net](http://12factor.net)
