@@ -20,4 +20,5 @@ pandoc \
  process/msee_process_development.md \
  process/msee_process_audit.md \
  technology/msee_technology.md \
+ technology/msee_technology_enterprise-wide.md \
  practices/msee_practices.md
