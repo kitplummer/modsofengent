@@ -4,9 +4,7 @@
 
 The concept of continuously delivering a product isn’t anything new in the material world.  Demand drives supply, and manufacturing supports the it.  Continuous Delivery[^cd1] of software in practice isn’t really new, but the formal description of the processes is.  Where continuous integration encapsulates a realtime testing function during the development process, continuous delivery practices pick up and focus on the steps required to move the software under development to a deployable state.  There is also the concept of continuous deployment which causes discourse[^cd2] within the community that cares.
 
-![image alt text](image_1.jpg) (NOTE:  http://continuousdelivery.com/wp-content/uploads/2014/02/01_CD_the_idea_low-res.jpg)
-
-(Funny illustration, that highlights many of the key points for Continuous Delivery)
+![Continuous Delivery...](images/image_1.jpg)
 
 Simply put, continuous deployment is the next step - automating the process of moving every new deployable artifact to the "production" environment.  In many cases this could mean a “dark” side, that isn’t available directly to consumers yet.  The deployments can accumulate, and then have a manual operations step that switches the production environment from “dark” to “light”, exposing all of the changes to the consumer.  As the illustration highlights, it is general a business decision - removed from the developers or even operations to make the changes available.  The notion of continuous deployment is better applied to web-based or even mobile applications than some other kinds of software (e.g. embedded, libraries, and components that conform to a specific release cycle) due to the nature of small changes and live updates on servers.
 

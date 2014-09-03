@@ -16,6 +16,7 @@ pandoc \
  msee_process_agile.md \
  msee_process_technical-debt.md \
  msee_process_architecture.md \
+ msee_process_continuous-delivery.md \
  msee_process_development.md \
  msee_process_audit.md \
  msee_technology.md \

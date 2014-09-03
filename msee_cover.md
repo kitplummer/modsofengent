@@ -1,3 +1,3 @@
 \newpage
 
-!["MAM Caracas"](image_0.jpg)
+!["MAM Caracas"](images/image_0.jpg)
