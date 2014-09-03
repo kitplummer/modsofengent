@@ -2,15 +2,29 @@
 
 ## Project-Specific
 
-Flexibility in enterprise processes and tools is required to ensure that round projects aren’t forced into square holes.  However, all projects should conform to the security and artifact delivery requirements.
+Flexibility in enterprise processes and tools is required to ensure that square projects aren’t forced into round holes.  However, all projects should conform to the security and artifact delivery requirements expected and specified by customers.  In many cases each project will have specific target (where ever the software is supposed to run) requirements.  It is essential that the engineering team have access to custom workflows that can instantiate the target-specific environments for development and testing - most likely to include configuration management manifests for the machines in that environment.
 
-Delivery requirements
+Just as important to the local development environment, the physical environment must be optimized for efficiency.  The environments should be optimized to allow engineer communications and messaging, as well as allow for quick state reviews without worrying about simple things like conference room availabilities.
 
-Target matrix
+As it is possible that the modern software engineering environment is geographically distributed, the projects need to ensure they are supported by entprise-managed communications tools.
 
-Dynamic machines for special requirements
+### Delivery requirements
 
-Automated workflows
+It isn't abnormal to expect that each customer have unique requirements for delivery of software artifacts, and in some cases there may be multiple paths for delivery - based on different sets of deliverables.  In all cases the workflow should be documented, and optimized for efficiency and repeatability - and automated as much as possible.
+
+The documentation should be used as an entry point for continuous improvement and auditing activities.  
+
+As mentioned in the section on Agile it is really important that all processes be reviewed.  And so should any automation that is built to support processes.  Where possible, automated notifications should be used to inform engineering team and stakeholders of any automation or process changes made.
+
+### Target Matrix
+
+While the paper discusses continuous integration as an enterprise-wide service that should be provided universally to all projects (as a self-service function) there are definitely cases where project-specific requirements dictate unique machine configurations for testing.  
+
+For example, a customer may be required to run software on a specific target platform.  Let's use Solaris as a special case target.  Enterprise engineering support only provides Windows and Linux machines.  In cases such as this, where the engineering team might be the Solaris expertise it may be required that a special purpose Solaris environment be created for continuous integration and testing pipeline specifications.  In some cases it might just be a special virtual machine that gets created as a build/test agent for the master continuous integration environment.
+
+One of the most important aspects with regards to targets, is the ability to recreate and rerun specific test cases.  With this in mind it is an absolute that target machines get managed via some kind of manifest of base machine that can be reproduced (to the test state).  
+
+Because scaling to support permutations of configurations is important, as much of the target provisioning and configuration should be automated.
 
 ### Development Environments
 
