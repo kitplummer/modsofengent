@@ -6,7 +6,9 @@ When I started writing this paper I had ‘Auditing’ as a sub-topic to ‘Deve
 
 There is also a need for development and operations staff to assume some of the qualities of the auditing positions.  Monitoring both the delivery systems and processes for opportunities to improve are essential to sharing the culture of change with quality assurance personnel.  From an auditing for quality and process management perspective there are a few key areas that the modern software engineering enterprise must address continuously, and engage all stakeholders with: managing change, control of duties, access control, process (automation) security and general process documentations.
 
-Continuous improvement doesn’t require CMMI (NOTE:  http://www.sei.cmu.edu/cmmi/ ) for enterprises to have a plan.  There are certain enterprises that will have to comply with various industry standards (SOX, etc.) in order to operate.  However, the underlying culture of development and operations should be based on continuous improvement via continuous delivery and direct feedback.  Stringent auditing and exam requirements should preclude continuous delivery cycles either (NOTE:  https://www.brightline.com/2012/12/auditing-devops-developers-with-access-to-production/ ).  This is even more true if the enterprise’s time-to-market windows are short.  Business requirements should drive processes that make sense, and auditing should be a tool to validate processes not impede delivery.
+Continuous improvement doesn’t require CMMI[^audit1] for enterprises to have a plan.  There are certain enterprises that will have to comply with various industry standards (SOX, etc.) in order to operate.  However, the underlying culture of development and operations should be based on continuous improvement via continuous delivery and direct feedback.  Stringent auditing and exam requirements should preclude continuous delivery cycles either[^audit2].  This is even more true if the enterprise’s time-to-market windows are short.  Business requirements should drive processes that make sense, and auditing should be a tool to validate processes not impede delivery.
+
+Here's a few useful links relating auditing to DevOps and continuous delivery:
 
 [https://www.brightline.com/2012/12/auditing-devops-developers-with-access-to-production/](https://www.brightline.com/2012/12/auditing-devops-developers-with-access-to-production/)
 
@@ -34,13 +36,13 @@ While it should go without stating, access control is a critical aspect of any I
 
 Test servers, network gear and the production pipeline tools all should be monitored from an access perspective.  In addition the access control matrix should be reviewed to ensure that only required personnel have access to required systems.
 
-As personnel come and go the access control matrix must be continuously revisited.
+As personnel come and go the access control matrix must be continuously revisited.  If possible the database/documents should be monitored, and any change to the them should be reported to lead personnel.
 
 ### CI/CD Automation Security
 
 Test environments that are part of the delivery chain must be guarded, as they contain the enterprise’s gold.  Much like banks use armored vehicles to transport cash and assets, software artifacts must be ensured the same kinds of security.  The systems must be controlled, and any change to them must be tracked and logged appropriately, with notifications to all stakeholders as well.
 
-There are a few tools (NOTE:  https://github.com/claudijd/rotten_apple) popping up that can test the security of the build/test environment, and can be an integral part of the CI environment to ensure that nothing has changed there.  In addition, typical configuration management tools can be used in coordination with container tools to always use clean machines for building - removing the opportunity for tampering.
+There are a few tools[^audit3] popping up that can test the security of the build/test environment, and can be an integral part of the CI environment to ensure that nothing has changed there.  In addition, typical configuration management tools can be used in coordination with container tools to always use clean machines for building - removing the opportunity for tampering.
 
 ### Process Review
 
@@ -54,6 +56,9 @@ Automation for auditing is fed by the generation of logs from all systems and tr
 
 It is extremely difficult to project when an application should go terminal, get replaced, rewritten, maintained, or just let it run.  However, if the development and maintenance teams struggle to implement, or release features and fixes - based on technology in play, it is time to start the decision process.  The enterprise will risk market opportunity, and customer satisfaction by holding on to technical debt too long.
 
-Key point: don’t hang on too long - technical debt (NOTE:  http://www.sei.cmu.edu/community/td2013/program/upload/technicaldebt-icse.pdf ) is a burden on the culture, as well as the bottom line.
+Key point: don’t hang on too long[^audit4] - technical debt is a burden on the culture, as well as the bottom line.  It is extremely difficult for developers to maintain currency with languages and tools.  Having to support older technologies adds to the complexities for developers and operations staff.
 
-[...]
+[^audit1]:[http://www.sei.cmu.edu/cmmi/](http://www.sei.cmu.edu/cmmi/)
+[^audit2]:[https://www.brightline.com/2012/12/auditing-devops-developers-with-access-to-production/](https://www.brightline.com/2012/12/auditing-devops-developers-with-access-to-production/)
+[^audit3]:[https://github.com/claudijd/rotten_apple](https://github.com/claudijd/rotten_apple)
+[^audit4]:[http://www.sei.cmu.edu/community/td2013/program/upload/technicaldebt-icse.pdf](http://www.sei.cmu.edu/community/td2013/program/upload/technicaldebt-icse.pdf)

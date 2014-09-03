@@ -74,9 +74,7 @@ It is definitely worth going through the deep dive for each section on the 12-Fa
 
 Mobile apps still require infrastructure and a common development environment, and should be treated in the same way as any other architecture - from a process and delivery perspective.  In addition, aside from the mobile platform’s SDKs which are regularly released, there are still dependencies to manage, and a somewhat more constrained development and test environment.
 
-[...]
-
-Each of the app stores has a different processes...automate the delivery to their endpoint.
+Each of the app stores has a different suite of processes...automate the delivery to their endpoint as much as possible.  Identify technical debts as quickly as possible, and ensure that as much of the mobile-specific development is documented and understood across the team(s).  While there are specific skillsets required for mobile development, it is critical that the modern enterprise attempt to limit the segregation of the development efforts.
 
 [^process_architecture1]:[http://alarmingdevelopment.org/?p=893](http://alarmingdevelopment.org/?p=893)
 [^process_architecture2]:[http://codesqueeze.com/the-7-software-ilities-you-need-to-know/](http://codesqueeze.com/the-7-software-ilities-you-need-to-know/)
