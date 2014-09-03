@@ -9,15 +9,15 @@ pandoc \
  msee_cover.md \
  msee_introduction.md \
  msee_executive-summary.md \
- msee_culture.md \
- msee_process.md \
- msee_process_supply-chain.md \
- msee_process_waterfall.md \
- msee_process_agile.md \
- msee_process_technical-debt.md \
- msee_process_architecture.md \
- msee_process_continuous-delivery.md \
- msee_process_development.md \
- msee_process_audit.md \
- msee_technology.md \
- msee_practices.md
+ people/msee_culture.md \
+ process/msee_process.md \
+ process/msee_process_supply-chain.md \
+ process/msee_process_waterfall.md \
+ process/msee_process_agile.md \
+ process/msee_process_technical-debt.md \
+ process/msee_process_architecture.md \
+ process/msee_process_continuous-delivery.md \
+ process/msee_process_development.md \
+ process/msee_process_audit.md \
+ technology/msee_technology.md \
+ practices/msee_practices.md

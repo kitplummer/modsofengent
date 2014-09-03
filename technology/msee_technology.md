@@ -12,29 +12,21 @@ Self-service sandboxes also need to be available for development and testing so 
 
 ## Vendor Independence, Tool Independence
 
-We often here about vendor-lock when concerning systems that lock a consumer in, via a proprietary interface or storage pattern.  The same concerns for production systems, regarding vendor lock, exist also for tools in the engineering chain.  Just as system software is evolving at a rapid pace, resolving vulnerabilities and adding new features - tools are constantly capabilities, enhancements and fixes too.  New tools replace existing tools for reasons.  Tool technology can very quickly become technical debt, especially when continuous delivery is the objective.  Open source helps this, as it is easier to see where the technology is going.  Proprietary tool manufacturers can hook the enterprise, then slack on updating or staying current with expected features.
+We often here about vendor-lock when concerning systems that lock a consumer in, via a proprietary interface or storage pattern.  The same concerns for production systems regarding vendor lock, exist also for tools in the engineering chain.  Just as system software is evolving at a rapid pace, resolving vulnerabilities and adding new features - tools are constantly adding capabilities, enhancements and fixes too.  New tools replace existing tools for reasons.  Tool technology can very quickly become technical debt, especially when continuous delivery is the objective.  Open source helps this, as it is easier to see where the technology is going.  Proprietary tool manufacturers can hook the enterprise, then slack on updating or staying current with expected features.
 
-[...]
-
-Standards???
-
-For the sake of the discussion in this whitepaper, services and tools can be broken down into two main groups, those that are enterprise-wide and those that are project specific.
-
- 
-
- 
+Currently, the testing arena is advancing rapidly in part due to new workflow automation capabilities being combined with cloud platforms.  Tools for mobile development are also rapidly coming to market.  This makes it very difficult for the engineering enterprise to down-select and make tools available for engineers to use.
 
 ## Enterprise-Wide
 
 Oversight is always hard, especially in large organizations.  The complexity of software projects doesn’t make it any easier - there are so many technologies coming and going.  It is extremely important for the engineering enterprise to provide a level control to the distribution of projects and teams.  Controlled but not totalitarian.  Project teams must be empowered to make decisions on technology choices - informed decisions.
 
-There is a solid consensus these days that issue tracking (NOTE:  http://mashable.com/2014/02/16/bug-tracking-apps/), version control (NOTE:  http://en.wikipedia.org/wiki/Revision_control) and continuous integration (NOTE:  http://www.extremeprogramming.org/rules/integrateoften.html) are absolute services, required in the enterprise offering.  It is best that these do exist and get maintained at an enterprise level.  Maintaining such systems per project adds overhead to teams that should be focused on solving problems.  Also, it’s important to provide a universal workflow to teams, so engineers and managers who transition on, or to another team get a familiar experience.
+There is a solid consensus these days that issue tracking[^tech1], version control[^tech2] and continuous integration[^tech3] are absolute services, required in the enterprise offering.  It is best that these do exist and get maintained at an enterprise level.  Maintaining such systems per project adds overhead to teams that should be focused on solving problems.  Also, it’s important to provide a universal workflow to teams, so engineers and managers who transition on, or to another team get a familiar experience.
 
 Self-service is a must, at a minimum developers must have an easy path to request capabilities and/or update paths for software.
 
 Operational environments must be well understood top-to-bottom to ensure the developers and security staff generate and work against realistic requirements.
 
-Testing toolkits
+### Testing toolkits
 
 For the same reasons as having a common issue tracking tool, it is necessary to manage a centralized functional testing environment.  Regardless of whether you’re developing a simple web app, mobile interface, or a highly complex desktop application - the benefit of having a common suite are test reuse, and test-writing optimization.  From an operations perspective, having a common suite (meaning tools for each target down-selected) test resources can also be reused, or made dynamic, provisioning only when a test operation is required.  In some cases, tests may be externalized - running on public (secured) infrastructure when demand requires.
 
@@ -44,21 +36,21 @@ For the same reasons as having a common issue tracking tool, it is necessary to 
 
 Cloud aint cheap.  It isn’t for production, or for development, or for test.  It isn’t easy to develop for either - at least in order to take advantage of any provider’s features.  And then there’s that - cloud lock.  While Amazon’s API is the de facto standard, and most other providers accommodate it to simplify transition to their services.  All of the "cloud" libraries do Amazon API, and a slew of others, so from an application development perspective it IS possible to garner a bit of abstraction.  But, to really take advantage of a providers’ features (elasticity, deployment, monitoring, etc.) you’re going to get into the weeds quickly - and thus cloud locked.
 
-That said there are enough good reasons for developers having access to a public 
+That said there are enough good reasons for developers having access to a public
 
 IaaS, SaaS, and PaaS!!!
 
- 
+
 
 CI – agents for all targets!
 
 DVCS
 
- 
+
 
 Artifact control (general and language-specific)
 
- 
+
 
 Ultimately, enterprise development support staff must be focused on the delivery of products/services by allowing developers to focus on developing.  Operations ensure the production environment.  Operations must include the engineering pipeline as well.  Sounds crazy I know.
 
@@ -105,7 +97,7 @@ One last point on configuration management: it should be used to baseline config
 
 ### Integrated Development Environments (IDEs)
 
-Many developers rely on an environment that provides a consolidated application for their development activities.  The Android and iOS SDKs, Java, and C++/.NET on Windows still are dominated by IDEs for development.  While there are multiple IDE options for each of these platforms it is in the enterprises best interest to support only one.  While smaller organizations may be able to support a BYOT environment, large scale engineering environments would benefit from the continuity and common documentation 
+Many developers rely on an environment that provides a consolidated application for their development activities.  The Android and iOS SDKs, Java, and C++/.NET on Windows still are dominated by IDEs for development.  While there are multiple IDE options for each of these platforms it is in the enterprises best interest to support only one.  While smaller organizations may be able to support a BYOT environment, large scale engineering environments would benefit from the continuity and common documentation
 
 [...]
 
@@ -143,11 +135,11 @@ Another challenge is when any of the team members are spread across timezones.  
 
 The virtual office isn’t for everyone (NOTE:  http://www.techrepublic.com/blog/10-things/10-signs-that-you-arent-cut-out-to-be-a-telecommuter/ ).  There are many challenges on both sides - but most are personal and cultural.  There are a handful of tools that can help manage the challenges from both sides - first is a central issue/bug tracking system.  Aside from the need to track and collect knowledge on the project itself, the centralized issue tracker serves as a basic time and effort management system.  Effort is one of the greatest factors in the teleworking group dynamic.
 
- 
+
 
 "agility." Dictionary.com Unabridged. Random House, Inc. 11 Aug. 2014. <Dictionary.com[ http://dictionary.reference.com/browse/agility](http://dictionary.reference.com/browse/agility)>.
 
- 
+
 
 [http://computingcareers.acm.org/?page_id=12](http://computingcareers.acm.org/?page_id=12)
 
@@ -157,4 +149,6 @@ Not sure how to use this article but need to:
 
 [http://fcw.com/Articles/2014/07/07/GitHub-swiss-army-knife.aspx?m=1&Page=4](http://fcw.com/Articles/2014/07/07/GitHub-swiss-army-knife.aspx?m=1&Page=4)
 
-[http://www.osnews.com/images/comics/wtfm.jpg](http://www.osnews.com/images/comics/wtfm.jpg)
+[^tech1]:[http://mashable.com/2014/02/16/bug-tracking-apps/](http://mashable.com/2014/02/16/bug-tracking-apps/)
+[^tech2]:[http://en.wikipedia.org/wiki/Revision_control](http://en.wikipedia.org/wiki/Revision_control)
+[^tech3]:[http://www.extremeprogramming.org/rules/integrateoften.html](http://www.extremeprogramming.org/rules/integrateoften.html)

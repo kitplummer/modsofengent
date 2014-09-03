@@ -1,6 +1,6 @@
 \newpage
 
-# Technical Debt
+## Technical Debt
 
 The ideas behind the notion of technical debt[^technicaldebt1] aren't necessarily new, they are just now being integrated into risk management planning, and development and generally IT operations.  The basic premise is that every project, through decisions on technology, feature priorities, delivery pipelines, and feedback cycles incurs debt (in the form of more work to be done) over time.  Of course some debts are manageable and some debts end up out of the control of project staff, and oversight efforts.  Upstream changes, new technologies, new processes, new requirements and most often, changes in priorities will effort a projects level of debt.
 
