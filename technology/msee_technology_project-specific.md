@@ -76,10 +76,20 @@ Container technology is evolving rapidly.  And, since this is a paper discussing
 
 While some organizations are already operationalizing Docker, most are using it as a developer tool, to simply the local environment.  This makes sense, and it always creates an on-ramp as containers can be used as a delivery apparatus between dev and various stages of testing.  Docker is also logical choice for basic continuous integration activities.  While Docker is Linux-only, combining it with a CI server allows for elastic build agents.
 
+Here's a couple links to material on Docker as a dev environment:
+
+[http://www.drdobbs.com/architecture-and-design/containers-for-development/240168801](http://www.drdobbs.com/architecture-and-design/containers-for-development/240168801)
+
+[http://www.slideshare.net/jpetazzo/docker-and-containers-for-development-and-deployment-scale12x](http://www.slideshare.net/jpetazzo/docker-and-containers-for-development-and-deployment-scale12x)
+
+[http://www.fig.sh](http://www.fig.sh)
+
 
 ### The Physical Environment
 
 Engineers are special, and good ones are exceptional.  In order to hire, and keep, good talent it is essential that the physical working space accommodate their needs (and their team's needs).  In addition, it’s important to make generic information available to engineer’s passively.  Wall mounted monitors are a great tool for this.  Keeping engineers in tune with organizational efforts is also a good way to identify opportunities for collaboration.  While the intent should not be to gamify developer activities, it is possible to use basic statistics about workflow progress and application performance as a way to incentivize continuous delivery and improvement.  Sandbox resources should also be available - tools for personal experiments and a generic playground for inviting creativity that's relative to the products and services being engineered.
+
+There are a few open discussions[^projectspec] about what is actually required for developer effectiveness and efficiency.  Multiple monitors connected to a high powered laptop are an absolute must.  Screen real estate is as important is the physical desktop.  As the modern development environment includes virtual machines the laptop must be powerful enough to run its host OS, plus a couple others (memory and CPU). The ability to be mobile is essential, developers are much more likely to work hard at different times - some of which might be away from the desk.
 
 ### The Distributed Environment
 
