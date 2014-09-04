@@ -8,6 +8,7 @@ pandoc \
  -f markdown -s \
  -o modern_software_engineering_enterprise-$VERSION.pdf \
  --toc \
+ -S \
  title.txt \
  msee_cover.md \
  VERSION \
