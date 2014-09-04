@@ -2,7 +2,7 @@
 
 # Process and Methodologies
 
-The discussion of process and methodologies is an infinite one.  But there are a few unrefutable truths - all centered around organizational agility and changing markets.
+The discussion of process and methodologies is an infinite one.  But there are a few irrefutable truths - all centered around organizational agility and changing markets.
 
 The modern software engineering enterprise requires speed and extensibility in order to deliver on time, the right product, with the ability to assure quality.  The use of complete Agile methods, or even just agile practices will help an organization support cultural requirements, and allow for the appropriate technologies to be used - nevermind an opportunity for feedback to drive the continued development of products and services.
 

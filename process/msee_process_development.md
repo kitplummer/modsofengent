@@ -2,7 +2,9 @@
 
 ## Development
 
-### Issue/task tracking
+The processes associated with the actual development of software should be transparent across the enterprise.  Enterprises should endeavor to cover everything from requirements management task tracking to the required testing and delivery automation required to move software through repeatable process steps. 
+
+### Issue/task Tracking
 
 The art (read engineering discipline) of managing requirements, issues and tasks has not been lost completely.  Even as Agile proponents harp against BDUF ("Big Design Up Front"), there has to be some thought, by somebody, into complexity, priority, relationships and architecture.  First, there needs to be a standard, universal location and tool suite for the management of all that.  It is important that as engineers and operators move from project to project, that there is familiarity in the methodology and workflows.
 
@@ -10,11 +12,11 @@ With an issue/task tracking tool in place (JIRA has become the most widely used)
 
 The collection of issues and tasks serve as a documentation base, one that can be prioritized, rewritten or redirected as necessary over the life of the software system.  It provides the history, present and future for the system, in a single location.
 
-### Review and documentation
+### Review and Documentation
 
 Many open source projects use a method of gates for managing contributions to the source code base.  Modern source code management (SCM) systems, especially distributed ones (e.g. git) have an inherent staging apparatus where and when code can be reviewed before being applied.  There are also many tools that can be used in conjunction with the SCM system to provide an annotation function to the changes, allowing developers to communicate about them in a self-documenting sort of way.
 
-#### Code reviews...
+#### Code Reviews...
 
 There are many reason why code reviews should be required.  Most of which are listed in a great CIO article[^dev1].  But, the biggest problem, related to the code itself (not the personal or social kind) is that reviews require context and expertise.  It is generally very difficult for those not in the know to not just review for "smells" (NOTE:  http://blog.codinghorror.com/code-smells/ ).  Coordinating reviews against the small changes associated with each code commit (pull requests in the world of Git).  With a distributed version control system, and a contribution path that includes a central repository it is possible to integrate a simple “review” step as part of the code submission activity.  Breaking the reviews into easily reviewable chunks can help associate the context.  Note, a code review is not a substitute for a design review - where the implementation plan is to be reviewed.
 
@@ -32,7 +34,7 @@ As mentioned above developers should be writing tests as part of their implement
 
 It is worth noting that increasing the rate of testing per changes does have a few challenges.  Running a continuous integration process for each individual change could be a burden on system resources, or just not realistic from a time-to-test the software perspective.  Because of this it is important for all stakeholders to understand the impact on a serial process, and the benefits of parallelizing the process.  In many cases it is easy to streamline the testing process, splitting up different tests to be run in parallel.  But, this has to be designed into the system and generally requires a automation/workflow engine to handle the tasks appropriately.
 
-### Style compliance
+### Style Compliance
 
 Just as it is important for the enterprise to have a common suite of management tools, ensuring that code and documentation conform to a standard/accepted style and format will create consistency across projects.  While it might seem inconsequential to a given project, it is the overarching level of organizational quality that is truly impacted.  Style guides and documentation requirements can help to ensure the maintainability of software overtime, and provide a "smell" opportunity during reviews and testing - ‘if that piece of code requires that much commenting, it probably can be simplified’.
 

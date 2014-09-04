@@ -6,7 +6,7 @@ Flexibility in enterprise processes and tools is required to ensure that square 
 
 Just as important to the local development environment, the physical environment must be optimized for efficiency.  The environments should be optimized to allow engineer communications and messaging, as well as allow for quick state reviews without worrying about simple things like conference room availabilities.
 
-As it is possible that the modern software engineering environment is geographically distributed, the projects need to ensure they are supported by entprise-managed communications tools.
+As it is possible that the modern software engineering environment is geographically distributed, the projects need to ensure they are supported by enterprise-managed communications tools.
 
 ### Delivery requirements
 
@@ -42,7 +42,7 @@ As long as it IS possible for developers to develop, and commit on day one, we�
 
 ### Configuration Management!
 
-Briefly mentioned above is the engineering and operational concept of Configuration Management, not to be confused with Change Management or the SEI’s defintion[^projectspec2].  The UK Governments' new inititive arond enterprise-side coding is spot on, specifically with their tie to "Infrastructure as Code"[^projectspec3].  Infrastructure as code is a key principal in being able to manage the relationships between dev, test(s) and production environments.  Drift[^projectspec4], or the potential for discrepancies between the environments, is a manageable thing, simply by having a high-assurance that each configuration shares the same source definitions (at least a major level, with only minor deltas to accommodate for the actual differences in network and naming configuration).  When combined with a solid release strategy, configuration management can complete the “bill of materials” as a service or product goes through the dev to production delivery processes.
+Briefly mentioned above is the engineering and operational concept of Configuration Management, not to be confused with Change Management or the SEI’s definition[^projectspec2].  The UK Governments' new initiative around enterprise-side coding is spot on, specifically with their tie to "Infrastructure as Code"[^projectspec3].  Infrastructure as code is a key principal in being able to manage the relationships between dev, test(s) and production environments.  Drift[^projectspec4], or the potential for discrepancies between the environments, is a manageable thing, simply by having a high-assurance that each configuration shares the same source definitions (at least a major level, with only minor deltas to accommodate for the actual differences in network and naming configuration).  When combined with a solid release strategy, configuration management can complete the “bill of materials” as a service or product goes through the dev to production delivery processes.
 
 There is a good selection of tools available for solving configuration management problems.  Some are better than others, but the space is evolving rapidly.  Configuration management is a delicate space, and support for the system is essential - both from an external (customer service agreement) and internal (IT-supported) perspective.  Internally the modern enterprise should evangelize the activity and the tools that it supports to ensure that development and operations teams alike get the message.  Configuration management is new enough that it isn’t completely pervasive.
 
@@ -76,7 +76,7 @@ Container technology is evolving rapidly.  And, since this is a paper discussing
 
 While some organizations are already operationalizing Docker, most are using it as a developer tool, to simply the local environment.  This makes sense, and it always creates an on-ramp as containers can be used as a delivery apparatus between dev and various stages of testing.  Docker is also logical choice for basic continuous integration activities.  While Docker is Linux-only, combining it with a CI server allows for elastic build agents.
 
-Here's a couple links to material on Docker as a dev environment:
+Here's a few links to material on Docker as a dev environment:
 
 [http://www.drdobbs.com/architecture-and-design/containers-for-development/240168801](http://www.drdobbs.com/architecture-and-design/containers-for-development/240168801)
 
