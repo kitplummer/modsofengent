@@ -1,12 +1,17 @@
-VERSION="0.0.1"
+#!/bin/bash
+
+source VERSION
+
 pandoc \
  --template modsofengent.latex \
  -V geometry:margin=1in \
+ -f markdown -s \
  -o modern_software_engineering_enterprise-$VERSION.pdf \
- -f markdown \
  --toc \
  title.txt \
  msee_cover.md \
+ VERSION \
+ msee_license.md \
  msee_introduction.md \
  msee_executive-summary.md \
  people/msee_culture.md \
