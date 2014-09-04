@@ -6,7 +6,7 @@ pandoc \
  --template modsofengent.latex \
  -V geometry:margin=1in \
  -f markdown -s \
- -o modern_software_engineering_enterprise-$VERSION.docx \
+ -o modern_software_engineering_enterprise-$VERSION.pdf \
  --toc \
  -S \
  title.txt \
