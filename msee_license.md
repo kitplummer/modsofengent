@@ -2,7 +2,7 @@
 
 The Modern Software Engineering Environment
 =============
-by Kit Plummer for AirGap.io
+by Kit Plummer & John Scott for AirGap.io
 
 Copyright (c) 2014 by AirGap.io
 

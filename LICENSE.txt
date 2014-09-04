@@ -1,6 +1,6 @@
 The Modern Software Engineering Enterprise
 =============
-by Kit Plummer for AirGap.io
+by Kit Plummer and John Scott for AirGap.io
 
 Copyright (c) 2014 by AirGap.io
 
