@@ -28,8 +28,7 @@ Because scaling to support permutations of configurations is important, as much 
 
 ### Development Environments
 
-Deploy on day one!  While Etsy, a marketplace for craft goods, has made its position in the microservices vs. monolithic discussion for the latter the bigger discussion is on their ability to rapidly on-ramp new developers (NOTE:  http://codeascraft.com/2012/03/13/making-it-virtually-easy-to-deploy-on-day-one/
-).  To sum it up Etsy uses packaged virtual machines that contain a complete replica of the production environment plus development tools.
+Deploy on day one!  While Etsy, a marketplace for craft goods, has made its position in the microservices vs. monolithic discussion for the latter the bigger discussion is on their ability to rapidly on-ramp new developers[^projectspec1].  To sum it up Etsy uses packaged virtual machines that contain a complete replica of the production environment plus development tools.
 
 By removing the need for a developer to first select, then install and configure a handful of tools, it becomes possible for anyone to quickly get to issues and tasks at hand.  But, there is a lot happening, and that has happened, behind the scenes in order for this opportunity to exist.
 
@@ -43,7 +42,7 @@ As long as it IS possible for developers to develop, and commit on day one, we�
 
 ### Configuration Management!
 
-Briefly mentioned above is the engineering and operational concept of Configuration Management, not to be confused with Change Management or the SEI’s defintion (NOTE:  https://www.sei.cmu.edu/productlines/frame_report/config.man.htm ).  The UK Government is right on, specifically with their tie to "Infrastructure as Code" (NOTE:  https://www.gov.uk/service-manual/making-software/configuration-management.html#infrastructure-as-code ).  Infrastructure as code is a key principal in being able to manage the relationships between dev, test(s) and production environments.  Drift (NOTE:  http://java.dzone.com/articles/infrastructure-code-when), or the potential for discrepancies between the environments, is a manageable thing, simply by having a high-assurance that each configuration shares the same source definitions (at least a major level, with only minor deltas to accommodate for the actual differences in network and naming configuration).  When combined with a solid release strategy, configuration management can complete the “bill of materials” as a service or product goes through the dev to production delivery processes.
+Briefly mentioned above is the engineering and operational concept of Configuration Management, not to be confused with Change Management or the SEI’s defintion[^projectspec2].  The UK Government is right on, specifically with their tie to "Infrastructure as Code"[^projectspec3].  Infrastructure as code is a key principal in being able to manage the relationships between dev, test(s) and production environments.  Drift[^projectspec4], or the potential for discrepancies between the environments, is a manageable thing, simply by having a high-assurance that each configuration shares the same source definitions (at least a major level, with only minor deltas to accommodate for the actual differences in network and naming configuration).  When combined with a solid release strategy, configuration management can complete the “bill of materials” as a service or product goes through the dev to production delivery processes.
 
 There is a good selection of tools available for solving configuration management problems.  Some are better than others, but the space is evolving rapidly.  Configuration management is a delicate space, and support for the system is essential - both from an external (customer service agreement) and internal (IT-supported) perspective.  Internally the modern enterprise should evangelize the activity and the tools that it supports to ensure that development and operations teams alike get the message.  Configuration management is new enough that it isn’t completely pervasive.
 
@@ -53,11 +52,13 @@ One last point on configuration management: it should be used to baseline config
 
 ### Integrated Development Environments (IDEs)
 
-Many developers rely on an environment that provides a consolidated application for their development activities.  The Android and iOS SDKs, Java, and C++/.NET on Windows still are dominated by IDEs for development.  While there are multiple IDE options for each of these platforms it is in the enterprises best interest to support only one.  While smaller organizations may be able to support a BYOT environment, large scale engineering environments would benefit from the continuity and common documentation
+Many developers rely on an environment that provides a consolidated application for their development activities.  The Android and iOS SDKs, Java, and C++/.NET on Windows still are dominated by IDEs for development.  While there are multiple IDE options for each of these platforms it is in the enterprises best interest to support only one.  While smaller organizations may be able to support a BYOT environment, large scale engineering environments would benefit from the continuity and common documentation that supported a single operational base platform.  From there developers can use desktop virtualization to support the actual development toolchain.
 
-[...]
+#### VMs - Vagrant
 
-VMs - Vagrant
+There are a few options for desktop virtualization.  For the most part, from a machine perspective there's little difference between them.  In addition, just working with machine images misses the point to a degree.  Because most development environments are evolving and dynamic, it is important to combine the VM tools with a configuration management toolset - and use configuration manifests to keep machines up-to-date.
+
+Here's a few links covering the greatness that is the tool Vagrant, which allows developers to programmatically control there VM configurations:
 
 [https://www.andrewmunsell.com/blog/development-environments-with-vagrant-and-puppet](https://www.andrewmunsell.com/blog/development-environments-with-vagrant-and-puppet)
 
@@ -65,23 +66,22 @@ VMs - Vagrant
 
 [http://blog.kloudless.com/2013/07/01/automating-development-environments-with-vagrant-and-puppet/](http://blog.kloudless.com/2013/07/01/automating-development-environments-with-vagrant-and-puppet/)
 
-Even MS is in:
+Even Microsoft is in:
 
 [http://msopentech.com/blog/2014/03/31/building-development-environment-vagrant-puppet/](http://msopentech.com/blog/2014/03/31/building-development-environment-vagrant-puppet/)
 
-Containers (Docker)
+#### Containers (Docker)
 
-Container technology is evolving rapidly.
+Container technology is evolving rapidly.  And, since this is a paper discussing the modern software engineering enterprise it can't be ignored. Docker[^projectspec5] has turned the technology world, with an opportunity, with no rival.  While virtual machine technology and cloud technologies are the main focus of enterprise infrastructure opportunities, Docker brings modern containerization to the masses - in a mainly open source way.  And for the most part Docker is playing an industry darling with major players such as Google and RedHat primed with their products using Docker.  Simply put, containers simplify the abstraction between a virtual machine and the host operating system, using more of the latter to provide capabilities inside the machine.  This shift of responsibility makes containers really lightweight, portable and application focused.
 
-Standardized against what "production" is!  Repeatable.  Deliverable
+While some organizations are already operationalizing Docker, most are using it as a developer tool, to simply the local environment.  This makes sense, and it always creates an on-ramp as containers can be used as a delivery apparatus between dev and various stages of testing.  Docker is also logical choice for basic continuous integration activities.  While Docker is Linux-only, combining it with a CI server allows for elastic build agents.
 
-### The Physical Development Environment
 
-Engineers are special, and good ones are exceptional.  In order to hire, and keep, good talent it is essential that the physical working space accommodate their needs.  In addition, it’s important to make generic information available to engineer’s passively.  Wall mounted monitors are a great tool for this.  Keeping engineers in tune with organizational efforts is also a good way to identify opportunities for collaboration.  While the intent should not be to gamify developer activities, it is possibly to us basic statistics about workflow progress and application performance as a way to incentivize continuous delivery and improvement.  Sandbox resources should also be available - tools for personal experiments and a generic playground for inviting creativity.  
+### The Physical Environment
 
-[...]
+Engineers are special, and good ones are exceptional.  In order to hire, and keep, good talent it is essential that the physical working space accommodate their needs (and their team's needs).  In addition, it’s important to make generic information available to engineer’s passively.  Wall mounted monitors are a great tool for this.  Keeping engineers in tune with organizational efforts is also a good way to identify opportunities for collaboration.  While the intent should not be to gamify developer activities, it is possible to use basic statistics about workflow progress and application performance as a way to incentivize continuous delivery and improvement.  Sandbox resources should also be available - tools for personal experiments and a generic playground for inviting creativity that's relative to the products and services being engineered.
 
-### The Virtual Development Environment
+### The Distributed Environment
 
 There are many reasons for a major up-tick in the number of professionals working remotely.  The biggest justification for enterprises is that it is just required to maintain a quality workforce.  Many employees are unwilling to relocate, and are looking for opportunities to commute less.  And in some cases enterprises just have facilities in many geographically distributed areas - or even globally.  From a technical perspective there are very few justifications for having employees in the same physical location.  The biggest reason is for operational security, and protection of the codebase.  Even with virtual private networking capabilities it is very difficult to ensure the security of both the local engineering environment and enterprise services.  In most cases, unless there is critical security, as in National, requirements remote environments are secure enough.
 
@@ -89,18 +89,11 @@ One of the challenges inherent in remote work, is managing inclusiveness.  If on
 
 Another challenge is when any of the team members are spread across timezones.  Scheduling meetings, in particular recurring ones (e.g. daily standups), can become difficult as the most logical time is early or late in the day.  The question becomes "whose day?".
 
-The virtual office isn’t for everyone (NOTE:  http://www.techrepublic.com/blog/10-things/10-signs-that-you-arent-cut-out-to-be-a-telecommuter/ ).  There are many challenges on both sides - but most are personal and cultural.  There are a handful of tools that can help manage the challenges from both sides - first is a central issue/bug tracking system.  Aside from the need to track and collect knowledge on the project itself, the centralized issue tracker serves as a basic time and effort management system.  Effort is one of the greatest factors in the teleworking group dynamic.
+The virtual office isn’t for everyone[^projectspec#].  There are many challenges on both sides - but most are personal and cultural.  There are a handful of tools that can help manage the challenges from both sides - first is a central issue/bug tracking system.  Aside from the need to track and collect knowledge on the project itself, the centralized issue tracker serves as a basic time and effort management system.  Effort is one of the greatest factors in the teleworking group dynamic.
 
-
-
-"agility." Dictionary.com Unabridged. Random House, Inc. 11 Aug. 2014. <Dictionary.com[ http://dictionary.reference.com/browse/agility](http://dictionary.reference.com/browse/agility)>.
-
-
-
-[http://computingcareers.acm.org/?page_id=12](http://computingcareers.acm.org/?page_id=12)
-
-http://nvd.nist.gov/home.cfm
-
-Not sure how to use this article but need to:
-
-[http://fcw.com/Articles/2014/07/07/GitHub-swiss-army-knife.aspx?m=1&Page=4](http://fcw.com/Articles/2014/07/07/GitHub-swiss-army-knife.aspx?m=1&Page=4)
+[^projectspec1]:[http://codeascraft.com/2012/03/13/making-it-virtually-easy-to-deploy-on-day-one/](http://codeascraft.com/2012/03/13/making-it-virtually-easy-to-deploy-on-day-one/)
+[^projectspec2]:[https://www.sei.cmu.edu/productlines/frame_report/config.man.htm](https://www.sei.cmu.edu/productlines/frame_report/config.man.htm)
+[^projectspec3]:[https://www.gov.uk/service-manual/making-software/configuration-management.html#infrastructure-as-code](https://www.gov.uk/service-manual/making-software/configuration-management.html#infrastructure-as-code)
+[^projectspec4]:[http://java.dzone.com/articles/infrastructure-code-when](http://java.dzone.com/articles/infrastructure-code-when)
+[^projectspec5]:[http://www.techrepublic.com/article/why-docker-and-why-now/](http://www.techrepublic.com/article/why-docker-and-why-now/)
+[^projectspec#]:[http://www.techrepublic.com/blog/10-things/10-signs-that-you-arent-cut-out-to-be-a-telecommuter/](http://www.techrepublic.com/blog/10-things/10-signs-that-you-arent-cut-out-to-be-a-telecommuter/)
