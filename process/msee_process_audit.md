@@ -26,7 +26,7 @@ While it appears inconsistent with DevOps mantras and a flat culture, the notion
 
 ### Separation of Systems
 
-There is no one process for all systems’ requirements.  Within an enterprise, there are many different systems in play, and not all treated the same.  Financial and personnel management systems don’t require the same intensity or even auditing controls as the corporate wiki.  The same can be said for the different pipelines associated with systems under development.  Microservices architectures help here, as service functionality can be decoupled and applied to different operational and auditing environments where necessary.  [Example …]
+There is no one process for all systems’ requirements.  Within an enterprise, there are many different systems in play, and not all treated the same.  Financial and personnel management systems don’t require the same intensity or even auditing controls as the corporate wiki.  The same can be said for the different pipelines associated with systems under development.  Microservices architectures help here, as service functionality can be decoupled and applied to different operational and auditing environments where necessary.
 
 Network infrastructures become the lowest common denominator quickly.  Just as systems and processes for the engineering workflows require monitoring and auditing, so does the core infrastructure.
 
