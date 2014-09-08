@@ -11,6 +11,9 @@ body {
     line-height: 140%;
     color: #333;
 }
+img {
+  max-width: 58em;
+}
 pre {
     border: 1px dotted gray;
     background-color: #ececec;
