@@ -1,7 +1,4 @@
-\newpage
-
 # Introduction
-
 
 Software IS eating the world [^1].  Software is as pervasive as it gets.  Companies big and small are developing software for themselves and their customers.  But are they keeping up with the times - are they modern software engineering enterprises?
 

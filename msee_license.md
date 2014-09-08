@@ -1,8 +1,7 @@
 \newpage
 
-The Modern Software Engineering Environment
+License
 =============
-by Kit Plummer & John Scott for AirGap.io
 
 Copyright (c) 2014 by AirGap.io
 
