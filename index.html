@@ -73,6 +73,7 @@
 <li><a href="#technology-services-and-tools">Technology: Services and Tools</a><ul>
 <li><a href="#vendor-independence-tool-independence">Vendor Independence, Tool Independence</a></li>
 <li><a href="#enterprise-wide">Enterprise-Wide</a><ul>
+<li><a href="#ephemeralization">Ephemeralization</a></li>
 <li><a href="#testing-toolkits-and-infrastructure">Testing Toolkits and Infrastructure</a></li>
 <li><a href="#continuous-integration-and-the-pipeline">Continuous Integration and the Pipeline</a></li>
 <li><a href="#cloud-public-and-private">Cloud (Public AND Private)</a></li>
@@ -363,6 +364,8 @@
 <p>There is a solid consensus these days that issue tracking<a href="#fn31" class="footnoteRef" id="fnref31"><sup>31</sup></a>, version control<a href="#fn32" class="footnoteRef" id="fnref32"><sup>32</sup></a> and continuous integration<a href="#fn33" class="footnoteRef" id="fnref33"><sup>33</sup></a> are absolute services, required in the enterprise offering. It is best that these do exist and get maintained at an enterprise level. Maintaining such systems per project adds overhead to teams that should be focused on solving problems. Also, it’s important to provide a universal workflow to teams, so engineers and managers who transition on, or to another team get a familiar experience.</p>
 <p>Self-service is a must, at a minimum developers must have an easy path to request capabilities and/or update paths for software.</p>
 <p>Operational environments must be well understood top-to-bottom to ensure the developers and security staff generate and work against realistic requirements.</p>
+<h3 id="ephemeralization">Ephemeralization</h3>
+<p>As the need to do more with less infiltrates every organization so does the need for the infrastructure to enable it. In most cases less comes in the form of abstractions, where work is hidden in layers of simplified interfaces. This risk with over-abstraction is the increase in interface complexity, and inability to accommodate changes up or down in the stack. Adam Wiggins, founder of Heroku puts it in the context of <a href="http://adam.herokuapp.com/past/2011/4/7/ephemeralization/">Machetes, not Swiss-Army knives</a> which accurately describes the needs-to-solutions ratio. Tools must be flexible to support many needs, not singular tools for singular solutions that create typical IT maintenance nightmares.</p>
 <h3 id="testing-toolkits-and-infrastructure">Testing Toolkits and Infrastructure</h3>
 <p>For the same reasons as having a common issue tracking tool, it is necessary to manage a centralized functional testing environment. Regardless of whether you’re developing a simple web app, mobile interface, or a highly complex desktop application - the benefit of having a common suite are test reuse, and test-writing optimization. From an operations perspective, having a common suite (meaning tools for each target down-selected) test resources can also be reused, or made dynamic, provisioning only when a test operation is required. In some cases, tests may be externalized - running on public (secured) infrastructure when demand requires.</p>
 <h3 id="continuous-integration-and-the-pipeline">Continuous Integration and the Pipeline</h3>
