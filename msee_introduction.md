@@ -1,5 +1,11 @@
 # Introduction
 
+## Who's This For?
+
+This document was specifically written for technical leaders in the government space.  It has evolved intentionally to be broader reaching, and to incorporate ideals and concepts that should appeal to small and medium-sized businesses as well.  If you are anywhere in the continuum of software - from idea to provider - there is something to take away.
+
+## Introducing
+
 Software IS eating the world [^1].  Software is as pervasive as it gets.  Companies big and small are developing software for themselves and their customers.  But are they keeping up with the times - are they modern software engineering enterprises?
 
 What is a modern software engineering enterprise?  First, it is an organization committed to continuously delivering high quality and secure software products and services.  Second, it is the collection of skills and knowledge that operates the infrastructure, designs systems, implements concepts and architectures, and monitors and maintains the whole using the optimum processes and tools at any given time. In addition, the software engineering enterprise is a measurable, repeatable, continuously improving suite of activities covering the lifecycles of all software-related objectives within and across organizations. To survive, the modern enterprise must be adaptable - flexible to the point of contortion.  It must constantly learn, both from mistakes and successes not only of its own, but of the domain around them.  
