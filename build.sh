@@ -20,6 +20,7 @@ case $1 in
       msee_introduction.md \
       msee_executive-summary.md \
       people/msee_culture.md \
+      people/msee_positions.md \
       process/msee_process.md \
       process/msee_process_supply-chain.md \
       process/msee_process_waterfall.md \
@@ -53,6 +54,7 @@ case $1 in
       msee_introduction.md \
       msee_executive-summary.md \
       people/msee_culture.md \
+      people/msee_positions.md \
       process/msee_process.md \
       process/msee_process_supply-chain.md \
       process/msee_process_waterfall.md \

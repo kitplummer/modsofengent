@@ -1,3 +1,4 @@
 % The Modern Software Engineering Enterprise
 % Kit Plummer & John Scott
-% [kit, john]@airgap.io
+% kitplummer@gmail.com
+% jms3rd@gmail.com
