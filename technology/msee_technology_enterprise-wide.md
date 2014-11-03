@@ -10,6 +10,10 @@ Self-service is a must, at a minimum developers must have an easy path to reques
 
 Operational environments must be well understood top-to-bottom to ensure the developers and security staff generate and work against realistic requirements.
 
+### Ephemeralization
+
+As the need to do more with less infiltrates every organization so does the need for the infrastructure to enable it.  In most cases less comes in the form of abstractions, where work is hidden in layers of simplified interfaces.  This risk with over-abstraction is the increase in interface complexity, and inability to accommodate changes up or down in the stack.  Adam Wiggins, founder of Heroku puts it in the context of [Machetes, not Swiss-Army knives](http://adam.herokuapp.com/past/2011/4/7/ephemeralization/) which accurately describes the needs-to-solutions ratio.  Tools must be flexible to support many needs, not singular tools for singular solutions that create typical IT maintenance nightmares.
+
 ### Testing Toolkits and Infrastructure
 
 For the same reasons as having a common issue tracking tool, it is necessary to manage a centralized functional testing environment.  Regardless of whether you’re developing a simple web app, mobile interface, or a highly complex desktop application - the benefit of having a common suite are test reuse, and test-writing optimization.  From an operations perspective, having a common suite (meaning tools for each target down-selected) test resources can also be reused, or made dynamic, provisioning only when a test operation is required.  In some cases, tests may be externalized - running on public (secured) infrastructure when demand requires.
