@@ -17,6 +17,7 @@ case $1 in
       msee_cover.md \
       VERSION \
       msee_license.md \
+      readme.md \
       msee_introduction.md \
       msee_executive-summary.md \
       people/msee_culture.md \
@@ -51,6 +52,7 @@ case $1 in
       msee_cover.md \
       VERSION \
       msee_license.md \
+      readme.md \
       msee_introduction.md \
       msee_executive-summary.md \
       people/msee_culture.md \
