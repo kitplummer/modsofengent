@@ -18,7 +18,11 @@
 <div id="TOC">
 <ul>
 <li><a href="#version">Version</a></li>
-<li><a href="#license">License</a></li>
+<li><a href="#license">License</a><ul>
+<li><a href="#contributing">Contributing</a><ul>
+<li><a href="#building">Building</a></li>
+</ul></li>
+</ul></li>
 <li><a href="#introduction">Introduction</a><ul>
 <li><a href="#whos-this-for">Who's This For?</a></li>
 <li><a href="#introducing">Introducing</a></li>
@@ -99,15 +103,30 @@
 </div>
 <h1 id="version">Version</h1>
 <p><em>This document is built from source files, which are available here:</em></p>
-<p><a href="https://github.com/airgap/modsofengent" class="uri">https://github.com/airgap/modsofengent</a></p>
+<p><a href="https://github.com/kitplummer/modsofengent" class="uri">https://github.com/kitplummer/modsofengent</a></p>
 <p>This particular build of the document is:</p>
-<p>VERSION=0.2.0</p>
+<p>VERSION=0.3.0</p>
 <p></p>
 <h1 id="license">License</h1>
 <p>Copyright (c) 2014 by Kit Plummer (kitplummer@gmail.com) Copyright (c) 2014 by AirGap.io</p>
 <p>This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
 <p><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" class="uri">http://creativecommons.org/licenses/by-nc-nd/4.0/</a></p>
 <p>The intent in using this particular license is to allow for the continued free distribution of the works, while maintaining the content in a centralized way - providing the appropriate attribution to those who've contributed in whatever way.</p>
+<h2 id="contributing">Contributing</h2>
+<p>This paper started as a simple document, with feeble aspirations. It's since grown just a little bit, to encompass a much broader and slightly deeper target. And most importantly, it's been repackaged in a form that aligns with software engineering.</p>
+<p>Now, it's <a href="https://github.io/kitplummer/modsoftengent">out there</a> for anyone to contribute to.</p>
+<p>Please help, by commenting <a href="https://github.com/kitplummer/modsofengent/commit/6e5a4692949cf2742084aa49a7bb0688ac7528ed">in the commits</a>, by creating an <a href="https://github.com/kitplummer/modsofengent/issues">issue</a>, or forking the code base and submitting a <a href="https://github.com/kitplummer/modsofengent/pulls?q=is%3Aopen+is%3Apr">pull request</a></p>
+<p>If you do contribute I'll add a <em>Contributions</em> section with a link to your contribution directly.</p>
+<h3 id="building">Building</h3>
+<p>I've only ever tried to build the document on a Mac and Linux.</p>
+<h4 id="requires">Requires</h4>
+<p>pandoc (which has some depends itself, like pdflatex)</p>
+<h4 id="run">Run</h4>
+<p>$ ./build.sh pdf</p>
+<p>It'll spit out a new PDF file in the source directory.</p>
+<p>$ ./build.sh html</p>
+<p>It'll spit out a single HTML file in the source directory.</p>
+<p></p>
 <h1 id="introduction">Introduction</h1>
 <h2 id="whos-this-for">Who's This For?</h2>
 <p>This document was specifically written for technical leaders in the government space. It has evolved intentionally to be broader reaching, and to incorporate ideals and concepts that should appeal to small and medium-sized businesses as well. If you are anywhere in the continuum of software - from idea to provider - there is something to take away.</p>
