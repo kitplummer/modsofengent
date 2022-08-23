@@ -33,7 +33,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Setup Dependencies
-        run: sudo apt install pandoc
+        run: sudo apt install pandoc texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
       - name: Build Documents
         run: make all
       - name: Upload artifact
