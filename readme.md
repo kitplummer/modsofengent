@@ -10,19 +10,22 @@ If you do contribute I'll add a *Contributions* section with a link to your cont
 
 ### Building
 
-I've only ever tried to build the document on a Mac and Linux.
+I've been able to build on Windows, macOS, and Linux.  But the dependencies for each, and installing them are different for each OS.  
 
 #### Requires
-
 
 pandoc (which has some depends itself, like pdflatex)
 
 #### Run
 
-  $ ./build.sh pdf
+$ `make pdf`
 
 It'll spit out a new PDF file in the source directory.
 
-  $ ./build.sh html
+$ `make html`
 
 It'll spit out a single HTML file in the source directory.
+
+Or...
+
+$ `make all`

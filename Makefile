@@ -1,6 +1,6 @@
 include VERSION
 
-BASENAME=kp-resume
+BASENAME=modsofengent
 
 all: pdf html
 
@@ -37,11 +37,11 @@ html:
 pdf:
 	pandoc \
       --template modsofengent.latex \
+      --pdf-engine=xelatex \
       -V geometry:margin=1in \
       -f markdown -s \
       -o modern_software_engineering_enterprise-$(VERSION).pdf \
       --toc \
-      -S \
       title.txt \
       msee_cover.md \
       VERSION \
