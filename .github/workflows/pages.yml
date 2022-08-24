@@ -36,6 +36,8 @@ jobs:
         run: sudo apt install pandoc texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
       - name: Build Documents
         run: make all
+      - name: Copy index.html
+        run : cp modern_software*.html index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
